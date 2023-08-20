@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-2 fs-4 fw-bold img-thumbnail " href="#">Grocery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trading.html">Tranding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html" role="button" aria-expanded="false">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================================================================== -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner shadow mt-2 bg-body-tertiary ">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./gs1.jpg" class="d-block w-100 img-fluid img-thumbnail" style="height: 440px;" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./gs2.jpg" class="d-block w-100 img-thumbnail" style="height: 440px;" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./gs4.jpg" class="d-block w-100 img-thumbnail" style="height: 440px;" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <h3 class="text-center text-uppercase mt-5"> best sellers</h3>
+    <hr ng-if="title" class="section-title-hr ng-scope">
+    <!-- =================================================================== -->
+    <div class="container">
+        <div class="row my-3 p-3 mb-5  rounded">
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./egg.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">egg </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./tomato.webp" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">tomato</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./ginger.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">ginger</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./onion.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">onion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================================================================== -->
+    <h3 class="text-center text-uppercase mt-5">Fruits and vegetables</h3>
+    <hr ng-if="title" class="section-title-hr ng-scope">
+
+    <div class="container">
+        <div class="row my-3 p-3 mb-5  rounded">
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./vegetable.avif" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">Fresh vegetable </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./fruits.png" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">fresh fruits</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./cut_fruits.jpeg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">cuts and exotics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./green.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">herbs & seasonings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================================================================== -->
+    <h3 class="text-center text-uppercase mt-5">your daily staples</h3>
+    <hr ng-if="title" class="section-title-hr ng-scope">
+
+    <div class="container">
+        <div class="row my-3 p-3 mb-5  rounded">
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./atta.webp" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">aata & flour</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./rice.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">rice & rice products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./dal.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">dal & pulses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./dryfruit.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">dry fruits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================================================================== -->
+    <h3 class="text-center text-uppercase mt-5">snack store</h3>
+    <hr ng-if="title" class="section-title-hr ng-scope">
+
+    <div class="container">
+        <div class="row my-3 p-3 mb-5  rounded">
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./snacks.jpeg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">chai time snacks</p>
+                        <p class="text-uppercase fs-5 fw-bold">up to 50% off </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./corn.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">morning starters</p>
+                        <p class="text-uppercase fs-5 fw-bold">up to 50% off </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./dal.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">dal & pulses</p>
+                        <p class="text-uppercase fs-5 fw-bold">up to 50% off </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 text-center">
+                <div class="card border-0 bg-light my-2">
+                    <div class="card-body">
+                        <img src="./dryfruit.jpg" style="height: 200px;" class="img-fluid img-thumbnail">
+                        <p class="text-capitalize mt-2">dry fruits</p>
+                        <p class="text-uppercase fs-5 fw-bold">up to 50% off </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container my-5">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2017–2023 Grocery, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

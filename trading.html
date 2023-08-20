@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-2 fs-4 fw-bold img-thumbnail " href="#">Grocery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./trading.html">Tranding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html" role="button" aria-expanded="false">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="card h-lg-100">
+        <div class="card-header">
+            <div class="row flex-between-center">
+                <div class="col-auto">
+                    <h6 class="mb-0">Total Sales</h6>
+                </div>
+                <div class="col-auto d-flex"><select class="form-select form-select-sm select-month me-2">
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">Jun</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+                    <div class="dropdown font-sans-serif btn-reveal-trigger"><button
+                            class="btn btn-link text-600 btn-sm dropdown-toggle dropdown-caret-none btn-reveal"
+                            type="button" id="dropdown-total-sales" data-bs-toggle="dropdown" data-boundary="viewport"
+                            aria-haspopup="true" aria-expanded="false"><svg
+                                class="svg-inline--fa fa-ellipsis-h fa-w-16 fs--2" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="ellipsis-h" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z">
+                                </path>
+                            </svg><!-- <span class="fas fa-ellipsis-h fs--2"></span> Font Awesome fontawesome.com --></button>
+                        <div class="dropdown-menu dropdown-menu-end border py-2" aria-labelledby="dropdown-total-sales">
+                            <a class="dropdown-item" href="#!">View</a><a class="dropdown-item" href="#!">Export</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item text-danger"
+                                href="#!">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body h-100 pe-0">
+            <!-- Find the JS file for the following chart at: src\js\charts\echarts\total-sales.js-->
+            <!-- If you are not using gulp based workflow, you can find the transpiled code at: public\assets\js\theme.js-->
+            <div class="echart-line-total-sales h-100" data-echart-responsive="true"
+                _echarts_instance_="ec_1692358778797"
+                style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative;">
+                <div
+                    style="position: relative; width: 21px; height: 25px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
+                </div>
+                <img val="feb" src="img11.png" class="img-fluid mx-auto d-block" alt="...">
+                <footer class="container my-5">
+                    <p class="float-end"><a href="#">Back to top</a></p>
+                    <p>© 2017–2023 Grocery, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+                </footer>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+                    crossorigin="anonymous"></script>
+</body>
+
+</html>
